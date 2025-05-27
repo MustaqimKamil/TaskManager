@@ -195,7 +195,7 @@ export default function TasksIndex({ tasks, lists, filters, flash }: Props) {
                     </div>
                     <Dialog open={isOpen} onOpenChange={setIsOpen}>
                         <DialogTrigger>
-                            <Button className="bg-primary hover:bg-primary/90 text-white shadow-lg">
+                            <Button>
                                 <Plus className="h-4 w-4 mr-2" />
                                 New Task
                             </Button>
