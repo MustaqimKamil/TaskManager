@@ -125,7 +125,7 @@ export default function ListsIndex({ lists, flash }: Props) {
                     <h1 className="text-2xl font-bold">Lists</h1>
                     <Dialog open={isOpen} onOpenChange={setIsOpen}>
                         <DialogTrigger>
-                            <Button>
+                            <Button className="bg-primary hover:bg-primary/90 shadow-lg">
                                 <Plus className="h-4 w-4 mr-2" />
                                 New List
                             </Button>
@@ -148,7 +148,7 @@ export default function ListsIndex({ lists, flash }: Props) {
                                         value={data.description}
                                         onChange={(e) => setData('description', e.target.value)}/>
                                 </div>
-                                <Button type="submit" disabled={processing}>
+                                <Button type="submit" disabled={processing} className="w-full bg-primary hover:bg-primary/90 shadow-lg">
                                     {editingList ? 'Update' : 'Create'}
                                 </Button>
                             </form>

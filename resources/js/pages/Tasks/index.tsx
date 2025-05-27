@@ -195,7 +195,7 @@ export default function TasksIndex({ tasks, lists, filters, flash }: Props) {
                     </div>
                     <Dialog open={isOpen} onOpenChange={setIsOpen}>
                         <DialogTrigger>
-                            <Button>
+                            <Button className="bg-primary hover:bg-primary/90 shadow-lg">
                                 <Plus className="h-4 w-4 mr-2" />
                                 New Task
                             </Button>
@@ -260,7 +260,7 @@ export default function TasksIndex({ tasks, lists, filters, flash }: Props) {
                                 <Button
                                     type="submit"
                                     disabled={processing}
-                                    className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg"
+                                    className="w-full bg-primary hover:bg-primary/90 shadow-lg"
                                 >
                                     {editingTask ? 'Update' : 'Create'}
                                 </Button>
